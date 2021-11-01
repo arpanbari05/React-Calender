@@ -1,0 +1,63 @@
+:root {
+	--color-primary: #3174ad;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header {
+	display: grid;
+	grid-gap: 20px;
+	background-color: var(--color-primary);
+	color: #fff;
+	padding: 40px 0;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: #ccc;
+  font-size: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.input-container > * {
+	margin-right: 10px !important;
+	margin-top: 10px !important;
+}
+
+.rbc-toolbar-label {
+	font-weight: 600;
+	color: var(--color-primary);
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	.rbc-toolbar-label {
+		margin: 10px 0 !important;
+	}
+}
